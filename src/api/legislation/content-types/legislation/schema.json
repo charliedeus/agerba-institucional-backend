@@ -39,6 +39,16 @@
       "type": "uid",
       "targetField": "title",
       "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Resoluções",
+        "Leis",
+        "Decretos"
+      ],
+      "default": "Resoluções",
+      "required": true
     }
   }
 }

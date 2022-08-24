@@ -56,6 +56,9 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "deadline": {
+      "type": "date"
     }
   }
 }

@@ -10,7 +10,8 @@ module.exports = {
       apolloServer: {
         tracing: false,
       },
-      ckeditor: true
+      ckeditor: true,
+      federation: true,
     },
   },
 
