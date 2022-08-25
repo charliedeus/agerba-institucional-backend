@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_calendar_calendars",
+  "info": {
+    "displayName": "Calendar",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 2
+    },
+    "starts_in": {
+      "type": "datetime",
+      "required": true
+    },
+    "finish_in": {
+      "type": "datetime",
+      "required": false
+    }
+  }
+}

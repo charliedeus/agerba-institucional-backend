@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eventos_publicos",
+  "info": {
+    "singularName": "evento-publico",
+    "pluralName": "eventos-publicos",
+    "displayName": "Eventos Públicos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "event_type": {
+      "type": "enumeration",
+      "enum": [
+        "Audiência Pública",
+        "Consulta Pública"
+      ],
+      "default": "Audiência Pública",
+      "required": true
+    },
+    "documents": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "events": {
+      "type": "component",
+      "repeatable": true,
+      "component": "calendar.calendar"
+    },
+    "notify": {
+      "type": "text"
+    },
+    "place": {
+      "type": "string"
+    },
+    "participation": {
+      "type": "string"
+    },
+    "closure": {
+      "type": "string"
+    }
+  }
+}
