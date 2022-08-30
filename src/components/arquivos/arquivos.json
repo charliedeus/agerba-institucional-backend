@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_arquivos_arquivos",
+  "info": {
+    "displayName": "Arquivos",
+    "icon": "file-upload"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

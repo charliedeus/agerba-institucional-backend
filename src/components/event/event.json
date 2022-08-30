@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_event_events",
+  "info": {
+    "displayName": "Event",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "enumeration",
+      "enum": [
+        "Publicação do Aviso",
+        "Recebimento de Contribuições",
+        "Audiência Pública"
+      ],
+      "required": true
+    },
+    "starts_in": {
+      "type": "datetime"
+    },
+    "finish_in": {
+      "type": "datetime"
+    }
+  }
+}

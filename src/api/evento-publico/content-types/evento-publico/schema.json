@@ -18,7 +18,7 @@
       "minLength": 3
     },
     "date": {
-      "type": "datetime",
+      "type": "date",
       "required": true
     },
     "event_type": {
@@ -30,30 +30,23 @@
       "default": "Audiência Pública",
       "required": true
     },
-    "documents": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "files"
-      ]
-    },
-    "events": {
+    "calendar": {
       "type": "component",
       "repeatable": true,
-      "component": "calendar.calendar"
+      "component": "event.event"
     },
     "notify": {
-      "type": "text"
+      "type": "richtext"
     },
     "place": {
-      "type": "string"
+      "type": "richtext",
+      "default": "Auditório da AGERBA, sito na 4ª Avenida, nº 435, térreo - CAB - Salvador - Bahia."
     },
-    "participation": {
-      "type": "string"
-    },
-    "closure": {
-      "type": "string"
+    "Documentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "arquivos.arquivos",
+      "required": false
     }
   }
 }
