@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "revenue_services",
+  "info": {
+    "singularName": "revenue-service",
+    "pluralName": "revenue-services",
+    "displayName": "Receitas - Serviços",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "description": {
+      "type": "text"
+    },
+    "receitas_grupo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::revenue-group.revenue-group",
+      "inversedBy": "revenue_services"
+    },
+    "cost": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    }
+  }
+}
