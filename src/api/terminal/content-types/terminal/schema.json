@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "terminais",
+  "info": {
+    "singularName": "terminal",
+    "pluralName": "terminais",
+    "displayName": "Terminais",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 3
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "document": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Rodoviário",
+        "Hidroviário",
+        "Aeroviário"
+      ],
+      "default": "Rodoviário",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

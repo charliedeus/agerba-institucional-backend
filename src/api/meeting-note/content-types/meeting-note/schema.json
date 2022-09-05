@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meeting_notes",
+  "info": {
+    "singularName": "meeting-note",
+    "pluralName": "meeting-notes",
+    "displayName": "Atas de Reunião",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "meeting_date": {
+      "type": "datetime",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "document": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}

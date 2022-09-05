@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "licitacaos",
+  "info": {
+    "singularName": "licitacao",
+    "pluralName": "licitacaos",
+    "displayName": "Licitação",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Online",
+        "Presencial"
+      ],
+      "default": "Presencial"
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "place": {
+      "type": "richtext",
+      "required": true,
+      "default": "Auditório da Agerba - 4ª Avenida, n.° 435 - Centro Administrativo da Bahia."
+    },
+    "documents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "arquivos.arquivos"
+    }
+  }
+}
