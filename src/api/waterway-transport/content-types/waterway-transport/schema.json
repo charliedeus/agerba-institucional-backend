@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "waterway_transports",
+  "info": {
+    "singularName": "waterway-transport",
+    "pluralName": "waterway-transports",
+    "displayName": "Transportes Hidroviários",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "text"
+    },
+    "documents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "arquivos.arquivos"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Catamarã",
+        "Ferry Boat",
+        "Lanchas"
+      ],
+      "default": "Lanchas"
+    }
+  }
+}
