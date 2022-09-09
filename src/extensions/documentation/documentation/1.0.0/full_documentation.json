@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-09-06T19:44:00.918Z"
+    "x-generation-date": "2022-09-09T14:11:19.637Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -51302,7 +51302,12 @@
             }
           }
         }
-      },
+      }
+    },
+    "parameters": {},
+    "responses": {},
+    "examples": {},
+    "requestBodies": {
       "Users-Permissions-RoleRequest": {
         "required": true,
         "content": {
@@ -51342,11 +51347,7 @@
           }
         }
       }
-    },
-    "parameters": {},
-    "responses": {},
-    "examples": {},
-    "requestBodies": {}
+    }
   },
   "paths": {
     "/eventos-publicos": {
@@ -58521,12 +58522,16 @@
           {
             "in": "path",
             "name": "id",
-            "type": "string",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
             "description": "role Id"
           }
         ],
         "responses": {
           "200": {
+            "description": "Returns the role",
             "content": {
               "application/json": {
                 "schema": {
@@ -58642,7 +58647,7 @@
         ],
         "summary": "Create a role",
         "requestBody": {
-          "$ref": "#/components/schemas/Users-Permissions-RoleRequest"
+          "$ref": "#/components/requestBodies/Users-Permissions-RoleRequest"
         },
         "responses": {
           "200": {
@@ -58686,12 +58691,15 @@
           {
             "in": "path",
             "name": "role",
-            "type": "string",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
             "description": "role Id"
           }
         ],
         "requestBody": {
-          "$ref": "#/components/schemas/Users-Permissions-RoleRequest"
+          "$ref": "#/components/requestBodies/Users-Permissions-RoleRequest"
         },
         "responses": {
           "200": {
@@ -58733,7 +58741,10 @@
           {
             "in": "path",
             "name": "role",
-            "type": "string",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
             "description": "role Id"
           }
         ],
@@ -58808,7 +58819,7 @@
         "summary": "Get list of users",
         "responses": {
           "200": {
-            "summary": "Returns an array of users",
+            "description": "Returns an array of users",
             "content": {
               "application/json": {
                 "schema": {
@@ -58855,18 +58866,20 @@
             "application/json": {
               "schema": {
                 "type": "object",
+                "required": [
+                  "username",
+                  "email",
+                  "password"
+                ],
                 "properties": {
                   "email": {
-                    "type": "string",
-                    "required": true
+                    "type": "string"
                   },
                   "username": {
-                    "type": "string",
-                    "required": true
+                    "type": "string"
                   },
                   "password": {
-                    "type": "string",
-                    "required": true
+                    "type": "string"
                   }
                 }
               },
@@ -58982,12 +58995,16 @@
           {
             "in": "path",
             "name": "id",
-            "type": "string",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
             "description": "user Id"
           }
         ],
         "responses": {
           "200": {
+            "description": "Returns a user",
             "content": {
               "application/json": {
                 "schema": {
@@ -59027,7 +59044,10 @@
           {
             "in": "path",
             "name": "id",
-            "type": "string",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
             "description": "user Id"
           }
         ],
@@ -59037,18 +59057,20 @@
             "application/json": {
               "schema": {
                 "type": "object",
+                "required": [
+                  "username",
+                  "email",
+                  "password"
+                ],
                 "properties": {
                   "email": {
-                    "type": "string",
-                    "required": true
+                    "type": "string"
                   },
                   "username": {
-                    "type": "string",
-                    "required": true
+                    "type": "string"
                   },
                   "password": {
-                    "type": "string",
-                    "required": true
+                    "type": "string"
                   }
                 }
               },
@@ -59118,6 +59140,17 @@
           "Users-Permissions - Users & Roles"
         ],
         "summary": "Delete a user",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "user Id"
+          }
+        ],
         "responses": {
           "200": {
             "description": "Returns deleted user info",
@@ -59296,6 +59329,17 @@
           "Users-Permissions - Auth"
         ],
         "summary": "Default Callback from provider auth",
+        "parameters": [
+          {
+            "name": "provider",
+            "in": "path",
+            "required": true,
+            "description": "Provider name",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Returns a jwt token and user info",
@@ -59444,17 +59488,19 @@
             "application/json": {
               "schema": {
                 "type": "object",
+                "required": [
+                  "password",
+                  "currentPassword",
+                  "passwordConfirmation"
+                ],
                 "properties": {
                   "password": {
-                    "required": true,
                     "type": "string"
                   },
                   "currentPassword": {
-                    "required": true,
                     "type": "string"
                   },
                   "passwordConfirmation": {
-                    "required": true,
                     "type": "string"
                   }
                 }
@@ -59496,7 +59542,9 @@
           {
             "in": "query",
             "name": "confirmation",
-            "type": "string",
+            "schema": {
+              "type": "string"
+            },
             "description": "confirmation token received by email"
           }
         ],
