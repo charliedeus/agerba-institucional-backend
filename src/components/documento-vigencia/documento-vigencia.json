@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_documento_vigencia_documento_vigencias",
+  "info": {
+    "displayName": "Documento_Vigência",
+    "icon": "file-signature"
+  },
+  "options": {},
+  "attributes": {
+    "starts_in": {
+      "type": "date",
+      "required": true
+    },
+    "file": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

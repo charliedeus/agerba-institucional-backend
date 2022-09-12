@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_students_student_resources",
+  "info": {
+    "displayName": "student-resources",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "resources": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "endsAt": {
+      "type": "date",
+      "required": true
+    },
+    "approved": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_ids",
+  "info": {
+    "singularName": "student-id",
+    "pluralName": "student-ids",
+    "displayName": "Carteira de Estudante",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "document": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 11,
+      "maxLength": 11,
+      "regex": "[0-9]{3}\\.?[0-9]{3}\\.?[0-9]{3}\\-?[0-9]{2}"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "document"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "resources": {
+      "type": "component",
+      "repeatable": true,
+      "component": "students.student-resources"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
