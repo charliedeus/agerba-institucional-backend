@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "terminals_usage_fees",
+  "info": {
+    "singularName": "terminals-usage-fee",
+    "pluralName": "terminals-usage-fees",
+    "displayName": "Tarifas de Uso de Terminais",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Rodoviário",
+        "Hidroviário"
+      ],
+      "default": "Rodoviário"
+    },
+    "document": {
+      "type": "component",
+      "repeatable": true,
+      "component": "documento-vigencia.documento-vigencia"
+    }
+  }
+}

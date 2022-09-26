@@ -4,7 +4,7 @@
   "info": {
     "singularName": "transport-fee",
     "pluralName": "transport-fees",
-    "displayName": "Tarifas de Transportes",
+    "displayName": "Tarifas do Rodoviário",
     "description": ""
   },
   "options": {
@@ -29,7 +29,7 @@
       "type": "enumeration",
       "enum": [
         "Intermunicipal",
-        "Metropolitano e Semi-Urbano",
+        "Metropolitano e Semiurbano",
         "Complementar"
       ],
       "default": "Intermunicipal"

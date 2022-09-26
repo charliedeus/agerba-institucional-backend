@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_municipios_municipios",
+  "info": {
+    "displayName": "Municipios",
+    "icon": "city"
+  },
+  "options": {},
+  "attributes": {
+    "municipios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::city.city"
+    }
+  }
+}

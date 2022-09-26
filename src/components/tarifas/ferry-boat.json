@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_ferry_boat_ferry_boats",
+  "info": {
+    "displayName": "FerryBoat",
+    "icon": "file-invoice-dollar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "document": {
+      "type": "component",
+      "repeatable": true,
+      "component": "documento-vigencia.documento-vigencia"
+    }
+  }
+}

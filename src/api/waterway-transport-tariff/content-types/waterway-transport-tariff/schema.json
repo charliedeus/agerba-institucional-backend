@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "waterway_transport_tariffs",
+  "info": {
+    "singularName": "waterway-transport-tariff",
+    "pluralName": "waterway-transport-tariffs",
+    "displayName": "Tarifas do Hidroviário",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "files": {
+      "type": "component",
+      "repeatable": true,
+      "component": "documento-vigencia.documento-vigencia"
+    },
+    "entityType": {
+      "type": "enumeration",
+      "enum": [
+        "FerryBoat",
+        "Catamarã",
+        "Lanchas"
+      ],
+      "required": true,
+      "default": "Lanchas"
+    }
+  }
+}

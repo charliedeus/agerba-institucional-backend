@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_tarifas_tutes",
+  "info": {
+    "displayName": "TUTE",
+    "icon": "file-invoice-dollar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Rodoviário",
+        "Hidroviário",
+        "Aeroviário"
+      ],
+      "default": "Rodoviário"
+    },
+    "document": {
+      "type": "component",
+      "repeatable": true,
+      "component": "documento-vigencia.documento-vigencia"
+    }
+  }
+}

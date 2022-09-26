@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gas_tariffs",
+  "info": {
+    "singularName": "gas-tariff",
+    "pluralName": "gas-tariffs",
+    "displayName": "Tarifas do Gás",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "document": {
+      "type": "component",
+      "repeatable": true,
+      "component": "documento-vigencia.documento-vigencia"
+    }
+  }
+}

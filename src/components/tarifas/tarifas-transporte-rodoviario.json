@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_tarifas_tarifas_transporte_rodoviarios",
+  "info": {
+    "displayName": "Transporte Rodoviário",
+    "icon": "file-invoice-dollar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Intermunicipal",
+        "Metropolitano e Semiurbano",
+        "Complementar"
+      ],
+      "default": "Complementar"
+    },
+    "document": {
+      "type": "component",
+      "repeatable": true,
+      "component": "documento-vigencia.documento-vigencia"
+    }
+  }
+}

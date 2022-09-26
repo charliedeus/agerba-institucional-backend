@@ -12,15 +12,31 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "name": {
       "type": "string",
       "required": true,
       "minLength": 3
     },
     "slug": {
       "type": "uid",
-      "targetField": "title",
       "required": true
+    },
+    "entityType": {
+      "type": "enumeration",
+      "enum": [
+        "Empresa",
+        "Polo"
+      ],
+      "default": "Empresa",
+      "required": true
+    },
+    "resources": {
+      "type": "dynamiczone",
+      "components": [
+        "tarifas.tarifas-transporte-rodoviario",
+        "tarifas.transporte-hidroviario",
+        "tarifas.tute"
+      ]
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_tarifas_transporte_hidroviarios",
+  "info": {
+    "displayName": "Transporte Hidroviário",
+    "icon": "file-invoice-dollar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "document": {
+      "type": "component",
+      "repeatable": true,
+      "component": "documento-vigencia.documento-vigencia"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Ferryboat",
+        "Catamarã",
+        "Lanchas"
+      ],
+      "default": "Lanchas"
+    }
+  }
+}

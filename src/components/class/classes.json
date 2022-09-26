@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_class_classes",
+  "info": {
+    "displayName": "Classes",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "document": {
+      "type": "component",
+      "repeatable": false,
+      "component": "documento-vigencia.documento-vigencia"
+    }
+  }
+}
