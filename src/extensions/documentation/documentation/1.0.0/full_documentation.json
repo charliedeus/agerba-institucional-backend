@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-09-26T14:10:49.342Z"
+    "x-generation-date": "2022-09-27T19:44:40.844Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -49534,7 +49534,8 @@
                 "type": "string",
                 "enum": [
                   "Intermunicipal",
-                  "Metropolitano e Semiurbano",
+                  "Metropolitano",
+                  "Semiurbano",
                   "Complementar"
                 ]
               },
@@ -49571,7 +49572,8 @@
                 "type": "string",
                 "enum": [
                   "Intermunicipal",
-                  "Metropolitano e Semiurbano",
+                  "Metropolitano",
+                  "Semiurbano",
                   "Complementar"
                 ]
               },
@@ -49905,7 +49907,8 @@
                 "type": "string",
                 "enum": [
                   "Intermunicipal",
-                  "Metropolitano e Semiurbano",
+                  "Metropolitano",
+                  "Semiurbano",
                   "Complementar"
                 ]
               },
@@ -50272,7 +50275,8 @@
                 "type": "string",
                 "enum": [
                   "Intermunicipal",
-                  "Metropolitano e Semiurbano",
+                  "Metropolitano",
+                  "Semiurbano",
                   "Complementar"
                 ]
               },
@@ -50606,7 +50610,8 @@
                 "type": "string",
                 "enum": [
                   "Intermunicipal",
-                  "Metropolitano e Semiurbano",
+                  "Metropolitano",
+                  "Semiurbano",
                   "Complementar"
                 ]
               },

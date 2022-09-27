@@ -29,10 +29,11 @@
       "type": "enumeration",
       "enum": [
         "Intermunicipal",
-        "Metropolitano e Semiurbano",
+        "Metropolitano",
+        "Semiurbano",
         "Complementar"
       ],
-      "default": "Intermunicipal"
+      "default": "Complementar"
     },
     "files": {
       "type": "component",
