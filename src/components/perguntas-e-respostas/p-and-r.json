@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_perguntas_e_respostas_p_and_rs",
+  "info": {
+    "displayName": "Perguntas e Respostas",
+    "icon": "question-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "text",
+      "required": true,
+      "unique": false
+    },
+    "answers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections-to-content.sections"
+    },
+    "documents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "arquivos.arquivos"
+    }
+  }
+}
