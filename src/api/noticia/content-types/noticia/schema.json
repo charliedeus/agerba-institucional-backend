@@ -24,7 +24,7 @@
     },
     "subtitle": {
       "type": "string",
-      "required": true,
+      "required": false,
       "minLength": 3
     },
     "newtype": {
@@ -59,6 +59,24 @@
     },
     "deadline": {
       "type": "date"
+    },
+    "colorTitle": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "black"
+      ],
+      "default": "white"
+    },
+    "Sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections-to-content.sections"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }
