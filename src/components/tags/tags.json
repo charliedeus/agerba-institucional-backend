@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_tags_tags",
+  "info": {
+    "displayName": "tags",
+    "icon": "bookmark",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    }
+  }
+}
