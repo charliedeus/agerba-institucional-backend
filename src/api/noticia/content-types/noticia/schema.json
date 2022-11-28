@@ -88,6 +88,13 @@
       "type": "component",
       "repeatable": true,
       "component": "tags.tags"
+    },
+    "PublishDate": {
+      "type": "date",
+      "required": true
+    },
+    "shortTitle": {
+      "type": "string"
     }
   }
 }
