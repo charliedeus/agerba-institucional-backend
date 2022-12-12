@@ -47,6 +47,13 @@
       "repeatable": true,
       "component": "arquivos.arquivos",
       "required": false
+    },
+    "meetLink": {
+      "type": "text"
+    },
+    "onlyRemote": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
