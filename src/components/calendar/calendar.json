@@ -2,7 +2,8 @@
   "collectionName": "components_calendar_calendars",
   "info": {
     "displayName": "Calendar",
-    "icon": "calendar-alt"
+    "icon": "calendar-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {

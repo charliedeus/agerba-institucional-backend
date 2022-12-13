@@ -54,6 +54,14 @@
     "onlyRemote": {
       "type": "boolean",
       "default": false
+    },
+    "finalReport": {
+      "type": "component",
+      "repeatable": true,
+      "component": "arquivos.arquivos"
+    },
+    "justification": {
+      "type": "string"
     }
   }
 }
