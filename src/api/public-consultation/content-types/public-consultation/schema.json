@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "public_consultations",
+  "info": {
+    "singularName": "public-consultation",
+    "pluralName": "public-consultations",
+    "displayName": "Consultas Públicas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "eventType": {
+      "type": "enumeration",
+      "enum": [
+        "Audiência Pública",
+        "Consulta Pública"
+      ],
+      "default": "Consulta Pública",
+      "required": true
+    },
+    "calendar": {
+      "type": "component",
+      "repeatable": true,
+      "component": "event.event"
+    },
+    "notify": {
+      "type": "richtext"
+    },
+    "participation": {
+      "type": "richtext"
+    },
+    "closure": {
+      "type": "richtext"
+    },
+    "documents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "arquivos.arquivos"
+    }
+  }
+}
