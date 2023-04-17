@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "linhas",
+  "info": {
+    "singularName": "linha",
+    "pluralName": "linhas",
+    "displayName": "Linhas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cdlinha": {
+      "type": "integer"
+    },
+    "nulinha": {
+      "type": "string"
+    },
+    "deorigem": {
+      "type": "string"
+    },
+    "dedestino": {
+      "type": "string"
+    },
+    "dedescricao": {
+      "type": "string"
+    },
+    "nupermissionarios": {
+      "type": "integer"
+    },
+    "boativo": {
+      "type": "boolean"
+    }
+  }
+}

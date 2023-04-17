@@ -13,9 +13,9 @@
     "@_sh/strapi-plugin-ckeditor": "^1.1.2",
     "@strapi/plugin-documentation": "^4.3.8",
     "@strapi/plugin-graphql": "^4.3.8",
-    "@strapi/plugin-i18n": "4.5.4",
-    "@strapi/plugin-users-permissions": "4.5.4",
-    "@strapi/strapi": "4.5.4",
+    "@strapi/plugin-i18n": "4.7.0",
+    "@strapi/plugin-users-permissions": "4.7.0",
+    "@strapi/strapi": "4.7.0",
     "pg": "8.6.0"
   },
   "author": {
@@ -25,7 +25,7 @@
     "uuid": "afec3143-f3df-41e3-8b32-78afef59cf42"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=12.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
