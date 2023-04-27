@@ -34,6 +34,19 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 10
+    },
+    "backgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "Azul",
+        "Vermelho"
+      ],
+      "default": "Azul"
     }
   }
 }

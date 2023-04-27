@@ -31,7 +31,8 @@
       "type": "integer"
     },
     "boativo": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   }
 }
