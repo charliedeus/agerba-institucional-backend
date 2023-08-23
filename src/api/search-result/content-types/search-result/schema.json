@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "search_results",
+  "info": {
+    "singularName": "search-result",
+    "pluralName": "search-results",
+    "displayName": "DPSE - Pesquisas Resultados",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "document": {
+      "type": "component",
+      "repeatable": true,
+      "component": "arquivos.arquivos"
+    }
+  }
+}
